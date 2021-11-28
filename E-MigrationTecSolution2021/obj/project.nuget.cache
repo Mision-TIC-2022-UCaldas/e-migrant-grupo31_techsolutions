@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Tw2o8Dl38MQtFqh6WWGY5QRlAwOhBZ2YojajRVSZG57zjYvi8qgs4aRGSVo0g/c06QIpj/I/GHkoRNhNv+wEZA==",
+  "dgSpecHash": "RDfl4Enrj3q0g6tLFCcOfnguWv7cEy4uCFBzej18JpMfrXzxDl7kfOkd/1GFAv2w+UCoEI8Pb3q4s82p2Wnizg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Raul Montaño\\source\\repos\\E-MigrationTecSolution2021\\E-MigrationTecSolution2021\\E-MigrationTecSolution2021.csproj",
+  "projectFilePath": "C:\\Users\\Raul Montaño\\source\\repos\\e-migrant-grupo31_techsolutions\\E-MigrationTecSolution2021\\E-MigrationTecSolution2021.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Raul Montaño\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Raul Montaño\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.12\\microsoft.aspnetcore.cryptography.internal.5.0.12.nupkg.sha512",

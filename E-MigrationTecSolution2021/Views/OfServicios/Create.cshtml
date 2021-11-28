@@ -1,0 +1,59 @@
+﻿@model E_MigrationTecSolution2021.Models.OfServicio
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>OfServicio</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NombreDelServicio" class="control-label"></label>
+                <input asp-for="NombreDelServicio" class="form-control" />
+                <span asp-validation-for="NombreDelServicio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MaximoNumeroDeMigrantes" class="control-label"></label>
+                <input asp-for="MaximoNumeroDeMigrantes" class="form-control" />
+                <span asp-validation-for="MaximoNumeroDeMigrantes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FechaDeInicio" class="control-label"></label>
+                <input asp-for="FechaDeInicio" class="form-control" />
+                <span asp-validation-for="FechaDeInicio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FechaDeFinalizacion" class="control-label"></label>
+                <input asp-for="FechaDeFinalizacion" class="form-control" />
+                <span asp-validation-for="FechaDeFinalizacion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EstadoServicio" class="control-label"></label>
+                <select asp-for="EstadoServicio" class="form-control">
+                    <option value="Activos">Activo</option>
+                    <option value="Cerrados">Cerrado</option>
+                    <option value="ConCupo">Con cupo</option>
+                    <option value="SinCupo">Sin Cupo</option>
+                </select>
+                <span asp-validation-for="EstadoServicio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

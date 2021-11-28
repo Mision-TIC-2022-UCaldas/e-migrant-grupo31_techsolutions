@@ -51,12 +51,29 @@
             </div>
             <div class="form-group">
                 <label asp-for="Sector" class="control-label"></label>
-                <select asp-for="Sector" class="form-control"></select>
+                <select asp-for="Sector" class="form-control">
+                    <option value="Publico">Publico</option>
+                    <option value="Privado">Privado</option>
+                    <option value="SinAnimoDeLucro">Sin animo de lucro</option>
+                    <option value="NoGubernamental">No gubernamental</option>
+                    <option value="Otro">Otro</option>
+                </select>
+
                 <span asp-validation-for="Sector" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="TipoServicio" class="control-label"></label>
-                <select asp-for="TipoServicio" class="form-control"></select>
+                <select asp-for="TipoServicio" class="form-control">
+                    <option value="Salud">Salud</option>
+                    <option value="Juridicos">Juridicos</option>
+                    <option value="Viveres">Viveres</option>
+                    <option value="ComidaPreparada">Comida Preparada</option>
+                    <option value="Empleo">Empleo</option>
+                    <option value="AlojamientoTemporal ">Alojamiento temporal</option>
+                    <option value="AlojamientoPermanente">Alojamiento Permanente</option>
+                    <option value="Educacion">Educación</option>
+                    <option value="Otros">Otros</option>
+                </select>
                 <span asp-validation-for="TipoServicio" class="text-danger"></span>
             </div>
             <div class="form-group">

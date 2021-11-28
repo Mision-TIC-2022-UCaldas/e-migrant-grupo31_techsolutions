@@ -118,6 +118,36 @@ namespace E_MigrationTecSolution2021.Data.Migrations
                     b.ToTable("Migrantes");
                 });
 
+            modelBuilder.Entity("E_MigrationTecSolution2021.Models.OfServicio", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("EstadoServicio")
+                        .HasColumnType("int");
+
+                    b.Property<string>("FechaDeFinalizacion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FechaDeInicio")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("MaximoNumeroDeMigrantes")
+                        .HasColumnType("int");
+
+                    b.Property<string>("NombreDelServicio")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("OfServicio");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")

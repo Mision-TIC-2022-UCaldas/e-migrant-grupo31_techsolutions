@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Raul Montaño\\source\\repos\\E-MigrationTecSolution2021\\E-MigrationTecSolution2021\\E-MigrationTecSolution2021.csproj": {}
+    "C:\\Users\\Raul Montaño\\source\\repos\\e-migrant-grupo31_techsolutions\\E-MigrationTecSolution2021\\E-MigrationTecSolution2021.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Raul Montaño\\source\\repos\\E-MigrationTecSolution2021\\E-MigrationTecSolution2021\\E-MigrationTecSolution2021.csproj": {
+    "C:\\Users\\Raul Montaño\\source\\repos\\e-migrant-grupo31_techsolutions\\E-MigrationTecSolution2021\\E-MigrationTecSolution2021.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Raul Montaño\\source\\repos\\E-MigrationTecSolution2021\\E-MigrationTecSolution2021\\E-MigrationTecSolution2021.csproj",
+        "projectUniqueName": "C:\\Users\\Raul Montaño\\source\\repos\\e-migrant-grupo31_techsolutions\\E-MigrationTecSolution2021\\E-MigrationTecSolution2021.csproj",
         "projectName": "E-MigrationTecSolution2021",
-        "projectPath": "C:\\Users\\Raul Montaño\\source\\repos\\E-MigrationTecSolution2021\\E-MigrationTecSolution2021\\E-MigrationTecSolution2021.csproj",
+        "projectPath": "C:\\Users\\Raul Montaño\\source\\repos\\e-migrant-grupo31_techsolutions\\E-MigrationTecSolution2021\\E-MigrationTecSolution2021.csproj",
         "packagesPath": "C:\\Users\\Raul Montaño\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Raul Montaño\\source\\repos\\E-MigrationTecSolution2021\\E-MigrationTecSolution2021\\obj\\",
+        "outputPath": "C:\\Users\\Raul Montaño\\source\\repos\\e-migrant-grupo31_techsolutions\\E-MigrationTecSolution2021\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Raul Montaño\\AppData\\Roaming\\NuGet\\NuGet.Config",
