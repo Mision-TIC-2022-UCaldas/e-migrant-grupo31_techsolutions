@@ -1,0 +1,91 @@
+﻿@model E_MigrationTecSolution2021.Models.Entidad
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>Entidad</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="RazonSocial" class="control-label"></label>
+                <input asp-for="RazonSocial" class="form-control" />
+                <span asp-validation-for="RazonSocial" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nit" class="control-label"></label>
+                <input asp-for="Nit" class="form-control" />
+                <span asp-validation-for="Nit" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Direccion" class="control-label"></label>
+                <input asp-for="Direccion" class="form-control" />
+                <span asp-validation-for="Direccion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ciudad" class="control-label"></label>
+                <input asp-for="Ciudad" class="form-control" />
+                <span asp-validation-for="Ciudad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Telefono" class="control-label"></label>
+                <input asp-for="Telefono" class="form-control" />
+                <span asp-validation-for="Telefono" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Correo" class="control-label"></label>
+                <input asp-for="Correo" class="form-control" />
+                <span asp-validation-for="Correo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Paginaweb" class="control-label"></label>
+                <input asp-for="Paginaweb" class="form-control" />
+                <span asp-validation-for="Paginaweb" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sector" class="control-label"></label>
+                <select asp-for="Sector" class="form-control">
+                    <option value="Publico">Publico</option>
+                    <option value="Privado">Privado</option>
+                    <option value="Sin animo de lucro">SinAnimoDeLucro</option>
+                    <option value="No gubernamental">NoGubernamental</option>
+                    <option value="Otro">Otro</option>
+                </select>
+
+                <span asp-validation-for="Sector" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TipoServicio" class="control-label"></label>
+                <select asp-for="TipoServicio" class="form-control">
+                    <option value="Salud">Salud</option>
+                    <option value="Juridicos">Juridicos</option>
+                    <option value="Viveres">Viveres</option>
+                    <option value="Comida preparada">ComidaPrparada</option>
+                    <option value="Empleo">Empleo</option>
+                    <option value="Alojamiento temporal ">AlojamientoTemporal</option>
+                    <option value="Alojamiento Permanente">Alojamiento Permanente</option>
+                    <option value="Educación">Educacion</option>
+                    <option value="Otros">Otros</option>
+                </select>
+                <span asp-validation-for="TipoServicio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
