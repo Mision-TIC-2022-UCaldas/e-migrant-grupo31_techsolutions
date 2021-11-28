@@ -5,11 +5,20 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
-
+<h1>Listado de Migrantes Registrados</h1>
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Create</a>
 </p>
+<form asp-action="Index" method="get">
+    <div class="form-action-no-color">
+        <p>
+            Find By name :<input type="text" name="Busqueda" value="@ViewData["CurrentFilter"]" />
+            <input type="submit" value="Search" class="btn-btn-success">
+            <a asp-action="Index"> Back to list </a>
+        </p>
+    </div>
+
+</form>
 <table class="table">
     <thead>
         <tr>
@@ -53,50 +62,51 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.TId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nombre)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Apellidos)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Pais)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AñoNacimiento)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MesNacimiento)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DiaNacimiento)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CorreoElectronico)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NTel)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DireccionActual)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Ciudad)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SituacionLaboral)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.NId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.NId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.NId">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Apellidos)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Pais)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AñoNacimiento)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MesNacimiento)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DiaNacimiento)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CorreoElectronico)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NTel)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DireccionActual)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ciudad)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SituacionLaboral)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.NId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.NId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.NId">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

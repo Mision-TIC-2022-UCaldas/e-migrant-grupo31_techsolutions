@@ -20,9 +20,20 @@ namespace E_MigrationTecSolution2021.Controllers
         }
 
         // GET: Migrantes
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string Busqueda )
         {
-            return View(await _context.Migrantes.ToListAsync());
+            ViewData["CurrentFilter"] = Busqueda;
+
+            var busqueda = from b in _context.Migrantes select b;
+
+            if (!String.IsNullOrEmpty(Busqueda))
+            {
+                busqueda = busqueda.Where(b =>
+                                            b.TId.Contains(Busqueda));
+            }
+
+            return View(await busqueda.AsNoTracking().ToListAsync());
+
         }
 
         // GET: Migrantes/Details/5

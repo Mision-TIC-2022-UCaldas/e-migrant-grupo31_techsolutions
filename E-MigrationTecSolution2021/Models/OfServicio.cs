@@ -19,6 +19,6 @@ namespace E_MigrationTecSolution2021.Models
         [Required]
         public string FechaDeFinalizacion { get; set; }
         [Required]
-        public EstadoServicio EstadoServicio { get; set; }
+        public string EstadoServicio { get; set; }
     }
 }
