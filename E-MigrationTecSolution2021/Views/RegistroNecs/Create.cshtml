@@ -1,0 +1,70 @@
+﻿@model E_MigrationTecSolution2021.Models.RegistroNec
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>RegistroNec</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Nit" class="control-label"></label>
+                <input asp-for="Nit" class="form-control" />
+                <span asp-validation-for="Nit" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Descripcion" class="control-label"></label>
+                <input asp-for="Descripcion" class="form-control" />
+                <span asp-validation-for="Descripcion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="prioridad" class="control-label"></label>
+                <select asp-for="prioridad" class="form-control">
+                    <option value="Baja">Baja</option>
+                    <option value="Media">Media</option>
+                    <option value="Alta">Alta</option>
+                    
+                </select>
+                <span asp-validation-for="prioridad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="categoria" class="control-label"></label>
+                <select asp-for="categoria" class="form-control">
+                    <option value="Salud">Salud</option>
+                    <option value="Alimentacion">Alimentación</option>
+                    <option value="Empleo">Empleo</option>
+                    <option value="AlojamientoTemporal">Alojamiento Temporal</option>
+                    <option value="AlojamientoPermanenente">Alojamiento Permanente</option>
+                    <option value="Educacion">Educación</option>
+                </select>
+                <span asp-validation-for="categoria" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Estado" class="control-label"></label>
+                <select asp-for="Estado" class="form-control">
+                    <option value="Atendido">Atendido</option>
+                    <option value="NoAtendido">No Atendido</option>
+                    
+                </select>
+                <span asp-validation-for="Estado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -9,6 +9,7 @@ namespace E_MigrationTecSolution2021.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {
+        public DbSet<RegistroNec> registroNecs { get; set; }
         public DbSet<OfServicio> OfServicios { get; set; }
         public DbSet<Migrante> Migrantes { get; set; }
         public DbSet<Entidad> Entidades { get; set; }

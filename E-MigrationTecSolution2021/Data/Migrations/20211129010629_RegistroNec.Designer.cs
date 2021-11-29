@@ -4,14 +4,16 @@ using E_MigrationTecSolution2021.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace E_MigrationTecSolution2021.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20211129010629_RegistroNec")]
+    partial class RegistroNec
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -106,9 +108,6 @@ namespace E_MigrationTecSolution2021.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("RegistroNecNit")
-                        .HasColumnType("nvarchar(450)");
-
                     b.Property<string>("SituacionLaboral")
                         .HasColumnType("nvarchar(max)");
 
@@ -117,8 +116,6 @@ namespace E_MigrationTecSolution2021.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("NId");
-
-                    b.HasIndex("RegistroNecNit");
 
                     b.ToTable("Migrantes");
                 });
@@ -378,15 +375,6 @@ namespace E_MigrationTecSolution2021.Data.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens");
-                });
-
-            modelBuilder.Entity("E_MigrationTecSolution2021.Models.Migrante", b =>
-                {
-                    b.HasOne("E_MigrationTecSolution2021.Models.RegistroNec", "RegistroNec")
-                        .WithMany()
-                        .HasForeignKey("RegistroNecNit");
-
-                    b.Navigation("RegistroNec");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

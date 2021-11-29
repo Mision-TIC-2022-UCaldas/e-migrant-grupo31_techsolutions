@@ -33,5 +33,6 @@ namespace E_MigrationTecSolution2021.Models
         public string DireccionActual { get; set; }
         public string Ciudad { get; set; }
         public string SituacionLaboral { get; set; }
+        public RegistroNec RegistroNec { get; set; }
     }
 }

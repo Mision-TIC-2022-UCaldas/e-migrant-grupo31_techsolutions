@@ -419,3 +419,8 @@ C:\Users\Raul Montaño\source\repos\e-migrant-grupo31_techsolutions\E-MigrationT
 C:\Users\Raul Montaño\source\repos\e-migrant-grupo31_techsolutions\E-MigrationTecSolution2021\obj\Debug\net5.0\Razor\Views\OfServicios\Details.cshtml.g.cs
 C:\Users\Raul Montaño\source\repos\e-migrant-grupo31_techsolutions\E-MigrationTecSolution2021\obj\Debug\net5.0\Razor\Views\OfServicios\Edit.cshtml.g.cs
 C:\Users\Raul Montaño\source\repos\e-migrant-grupo31_techsolutions\E-MigrationTecSolution2021\obj\Debug\net5.0\Razor\Views\OfServicios\Index.cshtml.g.cs
+C:\Users\Raul Montaño\source\repos\e-migrant-grupo31_techsolutions\E-MigrationTecSolution2021\obj\Debug\net5.0\Razor\Views\RegistroNecs\Create.cshtml.g.cs
+C:\Users\Raul Montaño\source\repos\e-migrant-grupo31_techsolutions\E-MigrationTecSolution2021\obj\Debug\net5.0\Razor\Views\RegistroNecs\Delete.cshtml.g.cs
+C:\Users\Raul Montaño\source\repos\e-migrant-grupo31_techsolutions\E-MigrationTecSolution2021\obj\Debug\net5.0\Razor\Views\RegistroNecs\Details.cshtml.g.cs
+C:\Users\Raul Montaño\source\repos\e-migrant-grupo31_techsolutions\E-MigrationTecSolution2021\obj\Debug\net5.0\Razor\Views\RegistroNecs\Edit.cshtml.g.cs
+C:\Users\Raul Montaño\source\repos\e-migrant-grupo31_techsolutions\E-MigrationTecSolution2021\obj\Debug\net5.0\Razor\Views\RegistroNecs\Index.cshtml.g.cs
