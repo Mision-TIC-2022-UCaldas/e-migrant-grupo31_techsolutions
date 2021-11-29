@@ -33,6 +33,7 @@
     ".NETCoreApp,Version=v5.0": {
       "E-MigrationTecSolution2021/1.0.0": {
         "dependencies": {
+          "GoogleAuthenticator": "2.2.0",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "5.0.10",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.12",
           "Microsoft.AspNetCore.Identity.UI": "5.0.12",
@@ -322,6 +323,20 @@
         },
         "compile": {
           "E-MigrationTecSolution2021.dll": {}
+        }
+      },
+      "GoogleAuthenticator/2.2.0": {
+        "dependencies": {
+          "QRCoder": "1.4.1"
+        },
+        "runtime": {
+          "lib/net5.0/Google.Authenticator.dll": {
+            "assemblyVersion": "2.0.1.0",
+            "fileVersion": "2.0.1.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/Google.Authenticator.dll": {}
         }
       },
       "Humanizer.Core/2.8.26": {
@@ -1231,6 +1246,20 @@
           "lib/net40/PagedList.Mvc.dll": {}
         }
       },
+      "QRCoder/1.4.1": {
+        "dependencies": {
+          "System.Drawing.Common": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/QRCoder.dll": {
+            "assemblyVersion": "1.4.1.0",
+            "fileVersion": "1.4.1.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/QRCoder.dll": {}
+        }
+      },
       "runtime.native.System/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -1491,6 +1520,9 @@
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.Win32.SystemEvents": "4.7.0"
+        },
+        "compile": {
+          "ref/netcoreapp3.0/System.Drawing.Common.dll": {}
         }
       },
       "System.Globalization/4.3.0": {
@@ -3625,6 +3657,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "GoogleAuthenticator/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1qn+4GKBfx9B3YdB0o+Bj9UIkC25HY3sEA5q2q2HS24zmu0sOm5/uzYqZNZkqj9SSSDaheBUXPTzlqXqCsPhPQ==",
+      "path": "googleauthenticator/2.2.0",
+      "hashPath": "googleauthenticator.2.2.0.nupkg.sha512"
+    },
     "Humanizer.Core/2.8.26": {
       "type": "package",
       "serviceable": true,
@@ -4051,6 +4090,13 @@
       "sha512": "sha512-D0M4qW2g4a9cwG8ozIKUnJheCrm5GpFTceqUl63AXWaAVnTgk+TysZYUOGMsBRuzid8aF+/E8b0bXM6+90jiEw==",
       "path": "pagedlist.mvc/4.5.0",
       "hashPath": "pagedlist.mvc.4.5.0.nupkg.sha512"
+    },
+    "QRCoder/1.4.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-W8KwCwsOJe9SI7Cm7XeIMawd08F/US6xNw34lg2Qnx6m7GYYakxbyBQaNoW1Q75oJOmX/32sJUZr6Cix2B6GUQ==",
+      "path": "qrcoder/1.4.1",
+      "hashPath": "qrcoder.1.4.1.nupkg.sha512"
     },
     "runtime.native.System/4.3.0": {
       "type": "package",

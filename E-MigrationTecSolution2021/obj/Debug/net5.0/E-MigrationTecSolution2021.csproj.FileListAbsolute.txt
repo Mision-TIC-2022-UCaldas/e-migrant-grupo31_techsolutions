@@ -436,3 +436,5 @@ C:\Users\Raul Montaño\source\repos\e-migrant-grupo31_techsolutions\E-MigrationT
 C:\Users\Raul Montaño\source\repos\e-migrant-grupo31_techsolutions\E-MigrationTecSolution2021\obj\Debug\net5.0\Razor\Views\RegServicios\Details.cshtml.g.cs
 C:\Users\Raul Montaño\source\repos\e-migrant-grupo31_techsolutions\E-MigrationTecSolution2021\obj\Debug\net5.0\Razor\Views\RegServicios\Edit.cshtml.g.cs
 C:\Users\Raul Montaño\source\repos\e-migrant-grupo31_techsolutions\E-MigrationTecSolution2021\obj\Debug\net5.0\Razor\Views\RegServicios\Index.cshtml.g.cs
+C:\Users\Raul Montaño\source\repos\e-migrant-grupo31_techsolutions\E-MigrationTecSolution2021\bin\Debug\net5.0\Google.Authenticator.dll
+C:\Users\Raul Montaño\source\repos\e-migrant-grupo31_techsolutions\E-MigrationTecSolution2021\bin\Debug\net5.0\QRCoder.dll
