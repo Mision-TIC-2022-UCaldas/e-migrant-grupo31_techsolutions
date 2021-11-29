@@ -1,0 +1,37 @@
+﻿@model IEnumerable<E_MigrationTecSolution2021.Models.RegServicio>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Sus Servicios</h1>
+
+
+<li class="nav-item">
+    <a class="nav-link text-dark" asp-area="" asp-controller="ConServicios" asp-action="">Volver a lista de Servicios Disponibles</a>
+</li>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NombreDelServicio)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreDelServicio)
+            </td>
+            <td>
+                |
+                <a asp-action="Details" asp-route-id="@item.NDocumento">Ver</a> |
+                <a asp-action="Delete" asp-route-id="@item.NDocumento">Cancelar Servicio</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

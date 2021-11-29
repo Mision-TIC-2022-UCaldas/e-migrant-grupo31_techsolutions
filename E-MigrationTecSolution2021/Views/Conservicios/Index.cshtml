@@ -1,0 +1,98 @@
+﻿@model IEnumerable<E_MigrationTecSolution2021.Models.ConServicios>
+
+@{
+    ViewData["Title"] = "Consulta de servicios para migrantes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Consulta de servicios para migrantes </h1>
+<form asp-action="Index" method="get">
+    <div class="form-action-no-color">
+        <p>
+            Escriba la Necesidad :<input type="text" name="Busqueda" value="@ViewData["CurrentFilter"]" />
+            <input type="submit" value="Search" class="btn-btn-success">
+            <a asp-action="Index"> Buscar por Necesidad </a>
+
+        </p>
+    </div>
+
+</form>
+<form asp-action="Index" method="get">
+    <div class="form-action-no-color">
+        <p>
+            Escriba la Categoria :<input type="text" name="Busquedad" value="@ViewData["CurrentFilter"]" />
+            <input type="submit" value="Search" class="btn-btn-success">
+            <a asp-action="Index"> Buscar por Categoria  </a>
+
+        </p>
+    </div>
+
+</form>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NombreDeEntidad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NombreDelServicio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Categoria)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Necesidad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MaximoNumeroDeMigrantes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaDeInicio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaDeFinalizacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EstadoServicio)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreDeEntidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreDelServicio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Categoria)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Necesidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaximoNumeroDeMigrantes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaDeInicio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaDeFinalizacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EstadoServicio)
+            </td>
+            <td>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="RegServicios" asp-action="Create">Registro Servicio</a>
+                </li>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
